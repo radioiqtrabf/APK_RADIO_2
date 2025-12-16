@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADIO IQRA BF - En Direct</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="https://i.pinimg.com/1200x/f6/d3/f6/f6d3f61ec150126bb68dcd3fc45aa508.jpg" alt="Logo Radio IQRA BF" class="logo">
+            </div>
+            <h1>RADIO IQRA BF</h1>
+            <div class="status-indicator" id="statusIndicator">
+                <span class="dot"></span>
+                <span class="status-text">HORS LIGNE</span>
+            </div>
+        </header>
+
+        <main class="player-container">
+            <audio id="audioPlayer" preload="none">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+
+            <div class="controls">
+                <button id="playBtn" class="play-btn" aria-label="Jouer">
+                    <svg viewBox="0 0 24 24" width="64" height="64">
+                        <path fill="currentColor" d="M8 5v14l11-7z"/>
+                    </svg>
+                </button>
+                <div id="loadingSpinner" class="spinner hidden"></div>
+            </div>
+            
+            <p id="streamInfo" class="stream-info">Prêt à écouter</p>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 RADIO IQRA BF - Tous droits réservés</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
